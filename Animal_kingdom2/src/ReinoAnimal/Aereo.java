@@ -50,4 +50,14 @@ public void voar() {
 			
 		}
 
+		public double getAltitude() {
+			return altitude;
+		}
+
+		public void setAltitude(double altitude) {
+			this.altitude = altitude;
+		}
+		
+		
+
 }

@@ -79,4 +79,38 @@ public class Animal {
 		return contador;
 	}
 
+	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public double getDataNascimento() {
+		return DataNascimento;
+	}
+
+	public void setDataNascimento(double dataNascimento) {
+		DataNascimento = dataNascimento;
+	}
+
+	public int getContador() {
+		return contador;
+	}
+
+	public void setContador(int contador) {
+		this.contador = contador;
+	}
+	
+	
+
 }

@@ -31,7 +31,7 @@ public class Aquatico extends Animal {
 	}
 	
 	public void comer() {
-		// TODO Auto-generated method stub
+	
 		System.out.println("O animal aquatico está comendo...");
 	}
 	
@@ -51,4 +51,21 @@ public class Aquatico extends Animal {
 		
 	}
 
+	public String getTipoAgua() {
+		return tipoAgua;
+	}
+
+	public void setTipoAgua(String tipoAgua) {
+		this.tipoAgua = tipoAgua;
+	}
+
+	public boolean isEscamoso() {
+		return escamoso;
+	}
+
+	public void setEscamoso(boolean escamoso) {
+		this.escamoso = escamoso;
+	}
+
+	
 }

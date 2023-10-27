@@ -32,7 +32,13 @@ public void mover() {
 @Override
 
 		public void comer() {
-			// TODO Auto-generated method stub
+	
+			/**
+		 	* Informa que o animal está comendo
+		 	* 
+		 	* @since 27/10/2023
+		 	*/
+	
 			System.out.println("O animal terrestre está comendo...");
 		}
 		
@@ -49,6 +55,22 @@ public void mover() {
 			System.out.println("Pertencente a região: " + regiao
 					+ "Possui pelo: " + pelo);
 			
+		}
+
+		public String getRegiao() {
+			return regiao;
+		}
+
+		public void setRegiao(String regiao) {
+			this.regiao = regiao;
+		}
+
+		public boolean isPelo() {
+			return pelo;
+		}
+
+		public void setPelo(boolean pelo) {
+			this.pelo = pelo;
 		}
 
 		
