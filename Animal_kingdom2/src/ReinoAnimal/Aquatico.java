@@ -1,5 +1,12 @@
 package ReinoAnimal;
 
+/**
+ * Esta classe representa um animal aquático
+ * 
+ * @author Samuel Lima dos Santos
+ *
+ */
+
 public class Aquatico extends Animal {
 
 	public Aquatico(String especie, String sexo, double dataNascimento, int contador) {
@@ -22,6 +29,12 @@ public class Aquatico extends Animal {
 		
 		
 	}
+	
+	public void comer() {
+		// TODO Auto-generated method stub
+		System.out.println("O animal aquatico está comendo...");
+	}
+	
 	@Override
 	public void perfil() { 
 		
