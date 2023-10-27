@@ -17,6 +17,7 @@ public class Animal {
 	private double DataNascimento;
 	
 	private int contador;
+	String	dados;
 	
 	public void comer() {
 		
@@ -38,8 +39,7 @@ public class Animal {
 		 * 
 		 * @since 27/10/2023
 		 */
-		
-		String	dados = "Espécie: " + especie
+	dados = "Espécie: " + especie
 				+ "Sexo: " + sexo 
 				+ "Data de nascimento: " + DataNascimento;
 		
