@@ -8,12 +8,10 @@ package ReinoAnimal;
  */
 
 public class Aquatico extends Animal {
-	
-	
+
 	private String tipoAgua;
 	private boolean escamoso;
-	
-	
+
 	/**
 	 * Construtor da classe Aquatico
 	 * 
@@ -28,41 +26,39 @@ public class Aquatico extends Animal {
 		super(especie, sexo, dataNascimento);
 		this.tipoAgua = tipoAgua;
 		this.escamoso = escamoso;
-		
+
 		// TODO Auto-generated constructor stub
 	}
 
 	public void nadar() {
-		
+
 		/**
 		 * Imprime no console que o animal está nadando
 		 * 
-		 *  @since 27/10/2023
+		 * @since 27/10/2023
 		 */
 		System.out.println("O animal está nadando...");
-		
-		
+
 	}
-	
+
 	public void comer() {
-	
+
 		System.out.println("O animal aquatico está comendo...");
 	}
-	
+
 	@Override
-	public void perfil() { 
-		
+	public void perfil() {
+
 		/**
 		 * Imprime no console os dados do animal
 		 * 
 		 * @since 27/10/2023
 		 * 
 		 **/
-		
+
 		super.perfil();
-		System.out.println("Tipo de água: " + tipoAgua
-				+ "Escamoso: " + escamoso);
-		
+		System.out.println("Tipo de água: " + tipoAgua + "Escamoso: " + escamoso);
+
 	}
 
 	public String getTipoAgua() {
@@ -81,5 +77,4 @@ public class Aquatico extends Animal {
 		this.escamoso = escamoso;
 	}
 
-	
 }

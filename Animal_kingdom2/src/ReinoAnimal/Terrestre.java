@@ -7,13 +7,13 @@ package ReinoAnimal;
  *
  */
 
-public class Terrestre extends Animal{
-	
+public class Terrestre extends Animal {
+
 	String regiao;
 	boolean pelo;
-	
+
 	/**
-	 * Construtor da classe  Terrestre
+	 * Construtor da classe Terrestre
 	 * 
 	 * @param especie
 	 * @param sexo
@@ -21,7 +21,7 @@ public class Terrestre extends Animal{
 	 * @param regiao
 	 * @param pelo
 	 */
-	
+
 	public Terrestre(String especie, String sexo, double dataNascimento, String regiao, boolean pelo) {
 		super(especie, sexo, dataNascimento);
 		this.regiao = regiao;
@@ -29,65 +29,58 @@ public class Terrestre extends Animal{
 		// TODO Auto-generated constructor stub
 	}
 
-	
-public void mover() {
-		
+	public void mover() {
+
 		/**
 		 * Imprime no console que o animal está se movendo
 		 * 
-		 *  @since 27/10/2023
+		 * @since 27/10/2023
 		 */
 		System.out.println("O animal está se movendo...");
-		
-		
-		}
 
-@Override
+	}
 
-		public void comer() {
-	
-			/**
-		 	* Informa que o animal está comendo
-		 	* 
-		 	* @since 27/10/2023
-		 	*/
-	
-			System.out.println("O animal terrestre está comendo...");
-		}
-		
-		public void perfil() { 
-			
-			/**
-			 * Imprime no console os dados do animal
-			 * 
-			 * @since 27/10/2023
-			 * 
-			 **/
-			
-			super.perfil();
-			System.out.println("Pertencente a região: " + regiao
-					+ "Possui pelo: " + pelo);
-			
-		}
+	@Override
 
-		public String getRegiao() {
-			return regiao;
-		}
+	public void comer() {
 
-		public void setRegiao(String regiao) {
-			this.regiao = regiao;
-		}
+		/**
+		 * Informa que o animal está comendo
+		 * 
+		 * @since 27/10/2023
+		 */
 
-		public boolean isPelo() {
-			return pelo;
-		}
+		System.out.println("O animal terrestre está comendo...");
+	}
 
-		public void setPelo(boolean pelo) {
-			this.pelo = pelo;
-		}
+	public void perfil() {
 
-		
-		
-	
+		/**
+		 * Imprime no console os dados do animal
+		 * 
+		 * @since 27/10/2023
+		 * 
+		 **/
+
+		super.perfil();
+		System.out.println("Pertencente a região: " + regiao + "Possui pelo: " + pelo);
+
+	}
+
+	public String getRegiao() {
+		return regiao;
+	}
+
+	public void setRegiao(String regiao) {
+		this.regiao = regiao;
+	}
+
+	public boolean isPelo() {
+		return pelo;
+	}
+
+	public void setPelo(boolean pelo) {
+		this.pelo = pelo;
+	}
 
 }
