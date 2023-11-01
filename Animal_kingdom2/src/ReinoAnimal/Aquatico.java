@@ -8,16 +8,30 @@ package ReinoAnimal;
  */
 
 public class Aquatico extends Animal {
+	
+	
+	private String tipoAgua;
+	private boolean escamoso;
+	
+	
+	/**
+	 * Construtor da classe Aquatico
+	 * 
+	 * @param especie
+	 * @param sexo
+	 * @param dataNascimento
+	 * @param tipoAgua
+	 * @param escamoso
+	 */
 
-	public Aquatico(String especie, String sexo, double dataNascimento, int contador) {
-		super(especie, sexo, dataNascimento, contador);
+	public Aquatico(String especie, String sexo, double dataNascimento, String tipoAgua, boolean escamoso) {
+		super(especie, sexo, dataNascimento);
+		this.tipoAgua = tipoAgua;
+		this.escamoso = escamoso;
+		
 		// TODO Auto-generated constructor stub
 	}
-	
-	String tipoAgua;
-	boolean escamoso;
-	
-	
+
 	public void nadar() {
 		
 		/**

@@ -1,13 +1,23 @@
 package ReinoAnimal;
 
 public class Aereo extends Animal{
-
-	public Aereo(String especie, String sexo, double dataNascimento, int contador) {
-		super(especie, sexo, dataNascimento, contador);
-		// TODO Auto-generated constructor stub
-	}
 	
 	double altitude;
+	
+	/**
+	 * Construtor da classe Aereo
+	 * 
+	 * @param especie
+	 * @param sexo
+	 * @param dataNascimento
+	 * @param altitude
+	 */
+
+	public Aereo(String especie, String sexo, double dataNascimento, double altitude) {
+		super(especie, sexo, dataNascimento);
+		this.altitude = altitude;
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 public void voar() {

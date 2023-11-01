@@ -8,14 +8,27 @@ package ReinoAnimal;
  */
 
 public class Terrestre extends Animal{
-
-	public Terrestre(String especie, String sexo, double dataNascimento, int contador) {
-		super(especie, sexo, dataNascimento, contador);
-		// TODO Auto-generated constructor stub
-	}
 	
 	String regiao;
 	boolean pelo;
+	
+	/**
+	 * Construtor da classe  Terrestre
+	 * 
+	 * @param especie
+	 * @param sexo
+	 * @param dataNascimento
+	 * @param regiao
+	 * @param pelo
+	 */
+	
+	public Terrestre(String especie, String sexo, double dataNascimento, String regiao, boolean pelo) {
+		super(especie, sexo, dataNascimento);
+		this.regiao = regiao;
+		this.pelo = pelo;
+		// TODO Auto-generated constructor stub
+	}
+
 	
 public void mover() {
 		

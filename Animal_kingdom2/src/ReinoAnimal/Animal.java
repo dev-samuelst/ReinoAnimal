@@ -16,7 +16,7 @@ public class Animal {
 	private String sexo;
 	private double DataNascimento;
 	
-	private int contador;
+	private static int contador;
 	String	dados;
 	
 	public void comer() {
@@ -46,7 +46,7 @@ public class Animal {
 		System.out.println(dados);
 	}
 	
-	private void count() {
+	private static void count() {
 		
 		/**
 		 * Incrementa a variavel contador em mais 1. É usado para contar a quantidade de animais ao ser chamado no construtor da classe
@@ -56,17 +56,29 @@ public class Animal {
 		
 		contador++;
 	}
+	
+	
+	/**
+	 * Construtor da classe Animal
+	 * 
+	 * @param especie
+	 * @param sexo
+	 * @param dataNascimento
+	 */
 
-	public Animal(String especie, String sexo, double dataNascimento, int contador) {
+	public Animal(String especie, String sexo, double dataNascimento) {
 		super();
 		this.especie = especie;
 		this.sexo = sexo;
-		DataNascimento = dataNascimento;
-		this.contador = contador;
+		this.DataNascimento = dataNascimento;
+		
+		/**
+		 * No final chamamos o método count para incrementar a quantidade de animais instanciados
+		 */
 		count();
 	}
 	
-	public int quantidade() {
+	public static int quantidade() {
 		
 		/**
 		 * Mostra a quantidade de animais instanciados 
